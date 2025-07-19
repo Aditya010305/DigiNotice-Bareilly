@@ -1,0 +1,36 @@
+@media screen and  (max-width: 991px) {
+    .nav-toggle{
+        display: block;
+        margin-right: 10px;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;           /* Position below navbar */
+        right: -100%;           /* Align with left edge */
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8); /* or any background you want */
+        padding: 1rem;
+        z-index: 100;
+    }
+
+    #up{
+        margin-top : 4rem;
+    }
+
+    .nav-links.active{
+        right: 0;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    #mode-toggle{
+        margin-left: 80px;
+    }
+}
